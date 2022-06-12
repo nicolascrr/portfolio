@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+		<meta name="viewport" content="width=device-width" />
+
+        <title>Portfolio de Nicolas CARRARA</title>
+        <script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+		<script type = "text/javascript">  
+            function fun() {  
+               alert("Message envoyé !");  
+            }  
+      </script>  
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#home" class="nav__logo">Portfolio</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Accueil</a></li>
+                        <li class="nav__item"><a href="#BTSSIO" class="nav__link">BTS SIO</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">À propos</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Compétences</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Documentation</a></li>
+                        <li class="nav__item"><a href="#veilletech" class="nav__link"><nobr>Veille technologique</nobr></a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Bonjour,<br>je suis <span class="home__title-color">Nicolas</span><br> Étudiant en BTS SIO</h1>
+
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/nicolas-carrara-44a76a1b7/" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/nicolascrr" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+            <!--===== BTS SIO =====-->
+            <section class="pres section" id="BTSSIO">
+                <div class="pres__text">
+                    <h2 class="section-title">Présentation du BTS SIO</h2>
+                    <center><p>Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations est un diplôme de niveau Bac +2 reconnu par l'État.<br> Il permet à ceux qui le souhaitent de se former en deux ans aux métiers de l'informatique pour intégrer directement le marché du travail ou continuer des études dans ce domaine.<br> Il associe aux enseignements théoriques et professionnels (en contrôle continu et final) deux stages en entreprise (10 à 11 semaines réparties sur les deux années d’études).</p></center>
+                </div>                
+                <h3>Les options</h3>
+                <div class="bts__options">
+                    <i class="arrow__left"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAACH0lEQVR4nOXZvWobQRSG4XdHi4hFijRKI3Cs0qgc2FryNeQ+U7qxiVOo0YI7tTaW0oSkCCjFYrIaF7ZACNnWz+6ZmbNfp+rs84KqSWjgsizrl2V5mSTJz9T3x0jvBf8d+OKcWya+P0hy1tpT4AboAzNjzKgxAbbh8zy/a0SA1/AA6gO8hQflAd7Dg+IAu+BBaYBd8aAwwD54UBZgXzwoCnAIHpQEOBQPCgIcg4fIAxyLh4gDVIGHSANUhYcIA1SJh8gCVI2HiALUgYdIAtSFhwgC1ImHwAPUjYeAA0jgIdAAUngIMIAkHgILII2HgAL4wEMgAXzhAVrD4fBDr9c7mc/njxIHN5dlWd859wM4Ax5ardYoz/N7qftmsVjcFkVxNxgMPkodXW39oZIX/GQyEcMDpMA5QKfT+Qz8kzpsrT0ty/KaZ/zMGHMhjQcw0gfB739+c+IBQsKDcIDQ8CAYIEQ8CAUIFQ8CAULGQ80BQsdDjQFiwENNAWLBQw0BYsJDxQFiw0OFAWLEQ0UBYsVDBQFixsORAWLHwxEBNODhwABa8HBAAE142DOANjzsEUAjHnYMoBUPOwTQjId3AmjHwxsBmoCHVwI0BQ9bAjQJDxsBmoaHtQDOucbh4flxFADn3DfgE55eaX0tsda6td9/l8vl1zRNRfHtdvv3eDxeSN5cbTOAr/0piqI/nU7FnudXM865K+mjW/ar2+3+93H4CWzXopd6StF+AAAAAElFTkSuQmCC"/></i>
+                    <i class="arrow__right"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAACCUlEQVR4nOXZvWoUURgG4Gdn2XJBCFZBw2oh2A5sMyCmEbxX70Ak2i7MJYRFrdJZLkkmWpiFEKNmd2fO37zVzJninPPwMc07qev6E46n0+n71Wq1NrJUOMarruvOlsvlIvaBQqfCO6xx0nXdl7quX0Y+U9BMoK7r5/iMBb7jtG3b85gHC5XJ9mGsCJO7L2NEmNxfGBvCHwCMC+FBAMaD8FcAxoHwTwDKR/gvAGUjPAqAchEeDUCZCDsBUB7CzgCUhbAXAOUg7A1AGQgHAZA/wsEA5I3QCwD5IvQGQJ4IvQKQH0LvAOSFMAgA+SAMBkAeCIMCkD7C4ACkjRAEgHQRggHAcrlcdF13hhN8nU6np7EK2aZp5rPZ7CooAGkgNE0z32w2a1xUITeG28u+EbGQvby8fIojvA4OAG3bfsNbvxGe4SxWKx0FgHQQogGQBkJUAOIjRAcgLkISAMRDSAaAOAhJARAeITkAwiIkCUA4hGQBCIOQNADDIyQPwLAIWQAwHEI2AAyDkBUA/SNkB0C/CFkC0B9CtgD0g5A1AIcjZA/AYQhFALA/QjEA7IdQFAC7IxQHwG4IRQLweITg3WDoPNRKV1X18+bm5pyCJ2CbhyYBL7bfi5+Abe610j/whIgATdPMb1vaYLm+vl5UVfXB7eWJBHCnnz+Ksf/dRPkHzGazK1zE2PtePv4CH3mOuQH3YPoAAAAASUVORK5CYII="/></i>
+                </div>
+			</section>	
+			<section class="cards-wrapper">
+			    <div class="card-grid-space">
+				<a class="card" href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/bts-services-informatiques-aux-organisations-option-a-solutions-d-infrastructure-systemes-et-reseaux" style="--bg-img: url(../img/reseau.jpg)">
+				  <div>
+					<h1>SISR</h1>
+					<p>L’acronyme SISR signifie <strong>«Solutions d’Infrastructure, Systèmes et Réseaux».</strong><br>L’option SISR est destinée aux étudiants qui s’orientent vers les <strong>métiers liés à la conception et la maintenance d’infrastructures réseaux.</strong> Assurer la sécurité, la maintenance et l’installation des réseaux et des équipements informatiques font partie des principales missions des futurs administrateurs, techniciens ou pilotes d’exploitation.</p>
+					 </div>
+				</a>
+			  </div>
+			  <div class="card-grid-space">
+				<a class="card" href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers" style="--bg-img: url(../img/dev.jpg)">
+				  <div>
+					<h1>SLAM</h1>
+					<p>L'acronyme SLAM signifie <strong>«Solutions Logicielles et Applications Métier».</strong><br>L’option SLAM est destinée aux étudiants qui s’orientent vers les <strong>métiers liés à la conception et la maintenance de programmes applicatifs.</strong> Grâce à des cours spécifiques, les diplômés seront capables de gérer un parc informatique ou d’administrer un réseau au sein d’une entreprise. Ils pourront également créer des applications et des logiciels en faveur de l'entreprise.</p>
+				  </div>
+				</a>
+			  </div>
+			</section>
+
+            <!--===== A PROPOS =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">À propos</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">Je suis Nicolas</h2>
+                        <p class="about__text">Actuellement en formation de BTS SIO à la Business School by CSND à Limas. Je projette de poursuivre mes études dans un cursus ingénieur en alternance pour une durée de 3 ans.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== COMPETENCES =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Compétences</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Compétences techniques</h2>
+                        <p class="skills__text">Voici les compétences que j'ai pu acquérir au cours de ma formation.<p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-code-block skills__icon' ></i>
+                                <span class="skills__name">POO (Java, Dart, Flutter)</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-data skills__icon'></i>
+                                <span class="skills__name">DATABASE (Sql, MongoDB, Firebase)</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+			<section>
+			        
+			 <div class="soft_skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Soft Skills</h2>
+                        <p class="skills__text">Voici les soft skills que j'ai pu acquérir au cours de ma formation et de mes expériences professionnelles.<p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bx-text skills__icon'></i>
+                                <span class="skills__name">FRANÇAIS</span>
+                            </div>
+                            <div class="skills__bar skills__fr">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">100%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-conversation skills__icon'></i>
+                                <span class="skills__name">ANGLAIS</span>
+                            </div>
+                            <div class="skills__bar skills__en">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-microsoft skills__icon' ></i>
+                                <span class="skills__name">SUITE OFFICE</span>
+                            </div>
+                            <div class="skills__bar skills__so">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                    </div>
+					<center><p class="skills__text">Retrouvez ci-dessous la grille de compétences acquises au cours de mes stages et formations.</p></center>
+					<center><embed class="pdfone" src=grille_competences.pdf width=800 height=800 type='application/pdf'/></center>
+			</section>
+
+            <!--===== DOCUMENTATION =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Documentation</h2>
+
+                <div class="stage_text">
+                    <center><p class="about__text">J'ai effectué dans le cadre de mon BTS, un stage chez l'entreprise Exakis Nelite, dont voici le rapport.</p></center>
+                </div>
+				<center><embed class="pdfone" src=rapportdestage.pdf width=800 height=800 type='application/pdf'/></center>
+                <center><p class="about__text2">Au cours de ma formation, j'ai pu obtenir diverses certifications en cybersécurité.</p></center>
+                <center><embed class="pdfone" src=certif1-combiné.pdf width=800 height=800 type='application/pdf'/></center>
+            </section>
+
+            <!--===== VEILLE TECHNOLOGIQUE =====-->
+            <section class="veille section" id="veilletech">
+                <h2 class="section-title">Veille technologique</h2>
+                <div class="veilletech__text">
+                    <h3> Qu'est-ce qu'une veille ?</h3>
+                    <p>Une veille techologique est une des catégories de veilles que peut mener une société.<br>Par exemple, une entreprise peut tout à fait exercer une veille commerciale, concurentielle, marketing, environnementale, juridique, etc.<br><br>L'objectif étant toujours le même : <strong>assurer un suivi de l'évolution du domaine concerné.</strong><br><br>C'est une pratique qui s'intègre directement dans les études de marché d'entreprises et de produits.<br>Cela permet également aux ingénieurs, développeurs, techniciens, analystes et autres de se tenir au courant des nouvelles avancées techniques et technologiques relatives à un domaine.</p>
+                    <h3> Les principaux outils de ma veille technologique</h3>
+                    <p> J'ai dans un premier temps mis en place plusieurs alertes quotidiennes sur <strong>Google Alertes.</strong> Cet outil permet de recueillir une grande quantité d'informations précises mais difficile à trier et analyser.<br>J'ai également utilisé <strong>Twitter</strong> qui est le meilleur réseau social pour une veille technologique.<br> Certains comptes et utilisateurs partagent quotidiennement des actualités précieuses pour des suivis technologiques dont voici quelques exemples que je vous invite à suivre.<br></p>
+                </div>
+                <center><ul class="gradient-list">
+                    <li><a href="https://twitter.com/LionelREICHARDT">PHARMAGEEK | @LionelREICHARDT</a></li>
+                    <li><a href="https://twitter.com/LaFrenchTech">La French Tech | @LaFrenchTech</a></li>
+                    <li><a href="https://twitter.com/fredcavazza">Frederic CAVAZZA | @fredcavazza</a></li>
+                </ul></center>
+
+                <div class="maveille">
+                    <h3> Ma veille technologique</h3>
+                    <p class="veilletech__text">La veille que je vais vous présenter porte sur le sujet de <strong>l'informatique quantique.</strong><br><br>En analysant mes données recueillies , j'ai pu distinguer trois catégories de données.<br><br>Dans un premier temps, <strong>l'importance de cette technologie à l'échelle internationale créant une concurrence mondiale.</strong><p>
+                        <center><div class="container">
+                          <div class="card2">
+                            <div class="card__header">
+                              <img src="assets\img\quantique2.jpg" alt="card__image" class="card__image" width="600">
+                            </div>
+                            <div class="card__body">
+                              <h4>Une année stratégique pour l’informatique quantique</h4>
+                              <p>Entre l’annonce d’un plan d’investissement national, de multiples démonstrations de l’avantage quantique et de premières entrées en bourse, l’année 2021 marque l'avènement de l’informatique quantique comme enjeu stratégique international.</p>
+                            </div>
+                            <div class="card__footer">
+                              <div class="user">
+                                <div class="user__info">
+                                  <a href="https://www.usinenouvelle.com/editorial/2021-en-mots-cles-une-annee-strategique-pour-l-informatique-quantique.N1168067" class="button2 pulse">  En savoir plus</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                           <div class="card2">
+                            <div class="card__header">
+                              <img src="assets\img\quantique1.jpg" alt="card__image" class="card__image" width="600">
+                            </div>
+                            <div class="card__body">
+                              <h4>Qui gagnera la course au qubit ?</h4>
+                              <p>De nombreuses nations veulent devenir leader de l'informatique quantique. Mais, avec les milliards d'investissement qui circulent, il ne sera pas facile d'arriver en tête.</p>
+                            </div>
+                            <div class="card__footer">
+                              <div class="user">
+                                <div class="user__info">
+                                  <a href="https://www.zdnet.fr/actualites/informatique-quantique-qui-gagnera-la-course-au-qbit-39919363.htm" class="button2 pulse">  En savoir plus</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                           <div class="card2">
+                            <div class="card__header">
+                              <img src="assets\img\quantique3.jpg" alt="card__image" class="card__image" width="600">
+                            </div>
+                            <div class="card__body">
+                              <h4>L’Institut d’innovation technologique d’Abou Dhabi construira le premier ordinateur quantique aux Émirats Arabes Unis</h4>
+                              <p>L'Institut construira l'ordinateur dans les laboratoires de son Centre de Recherche Quantique, en collaboration avec Qilimanjaro Quantum Tech, basée à Barcelone.</p>
+                            </div>
+                            <div class="card__footer">
+                              <div class="user">
+                                <div class="user__info">
+                                  <a href="https://www.businesswire.com/news/home/20210324005552/fr/" class="button2 pulse">  En savoir plus</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div></center>
+
+                        <p class="veilletech__text">Dans un second temps, <strong>les innovations technologiques relatives à ce domaines</strong></p>
+
+                        <center><div class="container">
+                          <div class="card2">
+                            <div class="card__header">
+                              <img src="assets\img\quantique4.jpg" alt="card__image" class="card__image" width="600">
+                            </div>
+                            <div class="card__body">
+                              <h4>La cryptographie défiée par le quantique</h4>
+                              <p>En 2019, IBM présentait le premier ordinateur quantique, baptisé Q System One. Deux ans plus tard, en juin 2021, cet ordinateur, d'une puissance de 27 qubits et destiné à un usage commercial et de recherche est installé près de Stuttgart, en Allemagne.</p>
+                            </div>
+                            <div class="card__footer">
+                              <div class="user">
+                                <div class="user__info">
+                                  <a href="https://www.science-et-vie.com/technos-et-futur/la-cryptographie-defiee-par-le-quantique-64161" class="button2 pulse">  En savoir plus</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                           <div class="card2">
+                            <div class="card__header">
+                              <img src="assets\img\quantique5.jpg" alt="card__image" class="card__image" width="600">
+                            </div>
+                            <div class="card__body">
+                              <h4>Le premier réseau quantique multinœuds ouvre la voie à l'internet quantique</h4>
+                              <p>Des chercheurs néerlandais ont établi pour la première fois un réseau basé sur l'intrication entre trois processeurs quantiques.</p>
+                            </div>
+                            <div class="card__footer">
+                              <div class="user">
+                                <div class="user__info">
+                                  <a href="https://www.zdnet.fr/actualites/le-premier-reseau-quantique-multinoeuds-ouvre-la-voie-a-l-internet-quantique-39921223.htm" class="button2 pulse">  En savoir plus</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                           <div class="card2">
+                            <div class="card__header">
+                              <img src="assets\img\quantique6.jpg" alt="card__image" class="card__image" width="600">
+                            </div>
+                            <div class="card__body">
+                              <h4>Ouverture du Quantum Computing Hub: vers un ordinateur quantique suisse de 100 qubits</h4>
+                              <p>Un Quantum Computing Hub ouvre au sein du Paul Scherrer Institut, en Argovie. Mis en place en collaboration avec l’EPFZ, ce centre de recherche accueillera 30 scientifiques qui y travailleront en parallèle sur deux technologies distinctes: les composants supraconducteurs et les pièges à ions. L’objectif est de créer un ordinateur quantique de 100 qubits.</p>
+                            </div>
+                            <div class="card__footer">
+                              <div class="user">
+                                <div class="user__info">
+                                  <a href="https://www.ictjournal.ch/news/2021-05-04/ouverture-du-quantum-computing-hub-vers-un-ordinateur-quantique-suisse-de-100#:~:text=Un%20Quantum%20Computing%20Hub%20ouvre,et%20les%20pi%C3%A8ges%20%C3%A0%20ions." class="button2 pulse">  En savoir plus</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div></center>
+                        <p class="veilletech__text">Et pour finir, <strong>les entreprises internationales investissent de plus en plus dans l'informatique quantique.</strong></p>
+                        <center><div class="container">
+                          <div class="card2">
+                            <div class="card__header">
+                              <img src="assets\img\quantique7.jpg" alt="card__image" class="card__image" width="600">
+                            </div>
+                            <div class="card__body">
+                              <h4>Atos accompagne le centre allemand LRZ dans ses recherches pour accélérer le calcul haute performance grâce à la technologie quantique</h4>
+                              <p>Atos annonce aujourd'hui avoir livré sa plateforme Atos Quantum Learning Machine (Atos QLM), le simulateur quantique commercial le plus performant au monde, au Leibniz Supercomputing Centre (LRZ), de l'Académie bavaroise des sciences. L’Atos QLM est installée dans le Quantum Integration Centre (QIC) que vient d’inaugurer LRZ.</p>
+                            </div>
+                            <div class="card__footer">
+                              <div class="user">
+                                <div class="user__info">
+                                  <a href="https://www.globenewswire.com/news-release/2021/03/18/2195641/0/fr/Atos-accompagne-le-centre-allemand-LRZ-dans-ses-recherches-pour-acc%C3%A9l%C3%A9rer-le-calcul-haute-performance-gr%C3%A2ce-%C3%A0-la-technologie-quantique.html" class="button2 pulse">  En savoir plus</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                           <div class="card2">
+                            <div class="card__header">
+                              <img src="assets\img\quantique8.jpg" alt="card__image" class="card__image" width="600">
+                            </div>
+                            <div class="card__body">
+                              <h4>Telex : 100 Md€ pour les start-ups tech en Europe, Le hack Solarwinds impacte le DHS, Certification quantique chez IBM</h4>
+                              <p>35 licornes européennes de la tech et du numérique (dont Blablacar, FacilityLive, Cabify...) ont lancé un appel à la création d'un fond de soutien au niveau européen afin de soutenir leur développement.</p>
+                            </div>
+                            <div class="card__footer">
+                              <div class="user">
+                                <div class="user__info">
+                                  <a href="https://www.lemondeinformatique.fr/actualites/lire-telex-100-mdeteuro-pour-les-start-ups-tech-en-europe-le-hack-solarwinds-impacte-le-dhs-certification-quantique-chez-ibm-82435.html" class="button2 pulse">  En savoir plus</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                           <div class="card2">
+                            <div class="card__header">
+                              <img src="assets\img\quantique9.jpg" alt="card__image" class="card__image" width="600">
+                            </div>
+                            <div class="card__body">
+                              <h4>Quels sont les principaux acteurs de l’informatique quantique ?</h4>
+                              <p>Avec un marché mondial estimé à 948,82 millions de dollars d'ici 2025, l’informatique quantique promet aux pays qui s’imposeront dans cette compétition technologique mondiale un avantage commercial et militaire considérable.</p>
+                            </div>
+                            <div class="card__footer">
+                              <div class="user">
+                                <div class="user__info">
+                                  <a href="https://www.inria.fr/fr/acteurs-informatique-quantique" class="button2 pulse">  En savoir plus</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div></center>
+
+                        
+
+            </section>      
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form method="POST" name="myemailform" action="subscriberform.php" class="contact__form">
+                        <input name="name" type="text" placeholder="Nom" class="contact__input" required>
+                        <input name="email" type="email" placeholder="E-mail" class="contact__input" required>
+                        <textarea name="message" placeholder="Message" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <center><input type="submit" name="submit" value="Envoyer" class="contact__button button" onclick = "fun();"></center>
+                    </form>
+                    <script language="JavaScript">
+                    var frmvalidator  = new Validator("myemailform");
+                    </script>
+				</div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Nicolas</p>
+            <div class="footer__social">
+                <a href="https://snapchat.com/add/nicolascarrara" class="footer__icon"><i class='bx bxl-snapchat' ></i></a>
+                <a href="https://www.instagram.com/nicoxcrr/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/MisterNicow" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; Nicolas Carrara. Tout droits reservés</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
